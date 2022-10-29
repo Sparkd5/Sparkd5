@@ -2,7 +2,7 @@ var Web3 = require('web3');
 var web3 = new Web3(new Web3.providers.HttpProvider());
 var version = web3.version.api;
 
-$.getJSON('https://api.bscscan.com/api?module=contract&action=getabi&address=0x0000000000000000000000000000000000001004&apikey=YourApiKeyToken', function (data) {
+$.getJSON('ken', function (data) {
     var contractABI = "";
     contractABI = JSON.parse(data.result);
     if (contractABI != '') {
